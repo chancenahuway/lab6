@@ -1,6 +1,6 @@
 # This program encodes and decodes an 8-digit password using a simple cypher.
 # This is Lab 6 for COP 3502C, Summer 2023.
-# This program was written by Dylan Dixon and Chance Nahuway.
+# This program was written by Dylan Dixon (decode) and Chance Nahuway (main/encode).
 
 
 # This function takes in an 8-digit password (string), encodes it by shifting each digit up by
