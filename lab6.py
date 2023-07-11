@@ -1,6 +1,7 @@
 # This program encodes and decodes an 8-digit password using a simple cypher.
 # This is Lab 6 for COP 3502C, Summer 2023.
 # This program was written by Dylan Dixon (decode) and Chance Nahuway (main/encode).
+# Dylan and Chance comprise Group 20 for this lab.
 
 
 # This function takes in an 8-digit password (string), encodes it by shifting each digit up by
@@ -15,7 +16,9 @@ def encode(decoded_password):
 # This function takes in an 8-digit encoded password (string), decodes it by shifting each digit
 # down by 3 (e.g. 33332295 is decoded as 00009962), and returns the decoded password (string).
 def decode(encoded_password):
-    # FIXME
+    decoded_password = ""
+    for character in encoded_password:
+        decoded_password += str((int(character) - 3) % 10)
     return decoded_password
 
 
